@@ -18,6 +18,8 @@ def CreateData(N, tau):
     # Generate x by a uniform distribution in [−1, +1].
     for i in range(N):
         TrainingSet.append(random.uniform(-1, 1))
+        
+    for i in range(100000):
         TestingSet.append(random.uniform(-1, 1))
     data = TrainingSet
 
